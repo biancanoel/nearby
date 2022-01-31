@@ -1,3 +1,15 @@
 .submit-btn {
     background-color: #00ffe0;
 }
+
+.location-selected {
+    border-style: none none solid;
+    border-width: 1px 1px 5px;
+    border-color: #0c4261;
+    max-width: 20%;
+    margin: auto
+}
+
+.submit-btn {
+    margin-top: var( --standard-margin );
+}

@@ -3,10 +3,9 @@
 }
 
 .nav-arrows.left {
-    margin-right: 20px;
+    margin-right: var( --standard-margin );
 }
 
-.place-image {
-    max-width: 350px;
-    max-height: 350px;
+.arrows-container {
+    margin-top: var( --standard-margin );
 }

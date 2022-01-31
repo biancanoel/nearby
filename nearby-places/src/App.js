@@ -53,7 +53,7 @@ function App() {
     const request = {
       keyword: searchString,
       location: where,
-      radius: '500'
+      radius: '5000'
     };
 
     const service = new google.maps.places.PlacesService(map);
@@ -74,7 +74,6 @@ function App() {
         </h1>
       </header>
       <div id="map"></div>
-
       <div className="location-select-container">
         <img id = "location-image" src={places[place].image} alt={places[place].name} data-lat={places[place].latitude} data-long={places[place].longitude}></img>
         <Slide changePlace={changePlace} />
@@ -82,14 +81,11 @@ function App() {
       </div>
 
       <p className="result-info visibility-hidden" >You searched for "{searchQuery}"</p>
-      <p className="result-info visibility-hidden"> We found {results.length} results </p>
+      <p className="result-info visibility-hidden"> We found {results.length} {results.length === 1 ? 'result' : 'results'} </p>
       <div className= "search-results-container">
-
         <Results results={results} />
-        
       </div>
 
-      
     </div>
   );
 }

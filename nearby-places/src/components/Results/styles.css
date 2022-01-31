@@ -5,5 +5,11 @@
 }
 
 .result-info-2 {
-    margin-bottom: 20px;
+    margin-bottom: var( --standard-margin );
 }
+
+@media only screen and (max-width: 600px) {
+    .result-container {
+      max-width: 60%;
+    }
+  }
