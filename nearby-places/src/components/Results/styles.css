@@ -1,0 +1,9 @@
+.result-container {
+    max-width: 35%;
+    margin: 0 auto;
+    border: solid 1px #00ffe0;
+}
+
+.result-info-2 {
+    margin-bottom: 20px;
+}
